@@ -1,0 +1,10 @@
+fastmcp
+langchain
+langchain-community
+langchain-core
+langchain-openai
+dotenv
+langchain-chroma
+langchain-text-splitters
+pdfplumber
+rank_bm25

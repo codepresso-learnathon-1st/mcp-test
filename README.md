@@ -12,6 +12,28 @@ Claude Desktop(MCP Client) 이용해 예제 MCP Server 간 동작 테스트를 �
 pip install -r requirements.txt
 ```
 
+## 예시 케이스 코드 
+```
+case1/
+└── rag/
+    ├── __init__.py
+    ├── base.py              ← RAG 검색 추상화 클래스
+    ├── pdf.py               ← PDF 특화 RAG 구현
+    ├── config.py            ← 경로 및 설정 값
+    ├── auto_mcp_json.py     ← MCP 실행을 위한 config JSON 생성기
+    └── mcp_server.py        ← 실제 MCP 서버 진입점
+
+```
+
+
+### 예시 케이스 진행 실행 요약
+1. PDF 파일 /data/*.pdf 에 넣기
+2. .env에 OPENAI_API_KEY 정의
+3. python auto_mcp_json.py 실행 → mcp_config.json 생성
+4. MCP 런타임에서 rag-mcp 실행
+5. MCP와 연결된 클라이언트가 semantic_search("What is LangChain?") 쿼리 전송
+6. 검색 결과 마크다운 형태로 응답
+
 ## TODO
 - [x] [예시 케이스](https://github.com/teddynote-lab/mcp-usecase/blob/main/case1/mcp_server.py) 참고해 동작 확인
 

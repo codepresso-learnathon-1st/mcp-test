@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ```
 
 ## TODO
-- [ ] [예시 케이스](https://github.com/teddynote-lab/mcp-usecase/blob/main/case1/mcp_server.py) 참고해 동작 확인
+- [x] [예시 케이스](https://github.com/teddynote-lab/mcp-usecase/blob/main/case1/mcp_server.py) 참고해 동작 확인
 
 ## 테스트 결과
 ### 1차 기본 동작 확인 :: ✅정상동작
@@ -38,3 +38,12 @@ python case1/auto_mcp_json.py
 # [3] 클로드 데스크탑 실행
 open -a Claude
 ```
+
+#### 2차 예시케이스 클로드 데스크탑 동작 캡쳐
+##### 1. 연결 확인
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/86a5a8d8-421e-40bf-bfee-084bf1171b12" />
+
+##### 2. 질문
+<img width="771" alt="image" src="https://github.com/user-attachments/assets/6ee518b0-4186-4c5d-b82b-748f656a33f1" />
+<img width="649" alt="image" src="https://github.com/user-attachments/assets/0cc8623e-a683-436d-9a1b-72c855de6202" />
+
